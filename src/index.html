@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { "title": "Metaverse" })
+	<body>
+		<div class="wrapper">
+			<header class="header">@@include('html/components/header.html')</header>
+
+			<section class="advantages advantages--shop">
+				@@include('html/components/advantages.html', {"img":
+				"./img/advantages/shop-img.jpg"})
+			</section>
+
+			<section class="create">@@include('html/components/create.html')</section>
+
+			<div class="decor"></div>
+
+			<section class="advantages advantages--suitable">
+				@@include('html/components/advantages.html', {"img":
+				"./img/advantages/suitable-img.jpg"})
+			</section>
+
+			<section class="partner">
+				@@include('html/components/partner.html')
+			</section>
+
+			<section class="whitelist whitelist--orange">
+				@@include('html/components/whitelist.html')
+			</section>
+
+			<section class="advantages advantages--metaverse">
+				@@include('html/components/advantages.html', {"img":
+				"./img/advantages/metaverse-img.jpg"})
+			</section>
+
+			<div class="decor"></div>
+
+			<section class="explore">
+				@@include('html/components/explore.html')
+			</section>
+
+			<section class="utility">
+				@@include('html/components/utility.html')
+			</section>
+
+			<section class="pass">@@include('html/components/pass.html')</section>
+
+			<section class="catalog">
+				@@include('html/components/catalog.html')
+			</section>
+
+			<section class="development">
+				@@include('html/components/development.html')
+			</section>
+
+			<div class="decor"></div>
+
+			<section class="team">@@include('html/components/team.html')</section>
+
+			<section class="whitelist whitelist--dark">
+				@@include('html/components/whitelist.html')
+			</section>
+
+			<section class="faq">@@include('html/components/faq.html')</section>
+
+			<div class="decor"></div>
+
+			<section class="talk">@@include('html/components/talk.html')</section>
+
+			<footer class="footer">@@include('html/components/footer.html')</footer>
+		</div>
+
+		<div id="popup-whitelist" class="popup">
+			@@include('html/components/popup-whitelist.html')
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'mixin';
+
+//==========================================================
+//=======================BASIC=============================
+
+body {
+	overflow-x: hidden;
+	background-color: $bg-color;
+	@media only screen and (max-width: 1320px) {
+		background-color: $black;
+	}
+}
+body.body--lock {
+	padding-right: 16px;
+	overflow: hidden;
+	@media only screen and (max-width: 1320px) {
+		padding: 0;
+	}
+}
+::-webkit-scrollbar {
+	width: 16px;
+}
+::-webkit-scrollbar-track {
+	background: $gradient-vert;
+}
+::-webkit-scrollbar-thumb {
+	background: lighten($bg-color, 20%);
+	border-radius: 20px;
+}
+
+//==========================================================
+//====================COMPONENTS============================
+
+@import './components/global';
+@import './components/header';
+@import './components/partner';
+@import './components/explore';
+@import './components/create';
+@import './components/utility';
+@import './components/pass';
+@import './components/catalog';
+@import './components/development';
+@import './components/team';
+@import './components/faq';
+@import './components/talk';
+@import './components/footer';
+@import './components/popups';
